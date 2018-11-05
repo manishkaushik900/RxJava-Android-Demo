@@ -71,6 +71,7 @@ public class IntroducingOperators extends AppCompatActivity {
         return new Observer<String>() {
             @Override
             public void onSubscribe(Disposable d) {
+                disposable=d;
                 Log.d(TAG, "onSubscribe");
             }
 
